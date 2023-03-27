@@ -1,0 +1,40 @@
+body {
+  overflow-x: hidden;
+}
+
+.contentContainer {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentInfo {
+  width: 80vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.extraInfo {
+  display: flex;
+}
+
+.extraInfo > p {
+  padding: 10px;
+}
+
+.contentHolder {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+br {
+  margin: 20px;
+}

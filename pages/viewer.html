@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oblivion Viewer</title>
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/viewer.css" />
+  </head>
+  <body>
+    <nav-bar color="black"></nav-bar>
+    <div class="contentContainer">
+      <div class="contentInfo">
+        <div class="title">
+          <h1 class="contentTitle"></h1>
+        </div>
+        <div class="extraInfo">
+          <p class="contentType"></p>
+          <p>&bull;</p>
+          <p class="contentGenre"></p>
+          <p>&bull;</p>
+          <p class="contentAuthor"></p>
+          <p>&bull;</p>
+          <p class="contentUploadDate"></p>
+        </div>
+      </div>
+      <div class="contentHolder" id="contentHolder"></div>
+    </div>
+  </body>
+  <script src="../components/navbar.js" type="module"></script>
+  <script src="../scripts/viewer.js" type="module"></script>
+</html>

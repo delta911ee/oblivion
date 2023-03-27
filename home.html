@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oblivion</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/homeStyle.css" />
+  </head>
+  <body>
+    <nav-bar color="white"></nav-bar>
+    <div class="hero">
+      <h1 class="title">Welcome To Oblivion.</h1>
+      <br />
+      <p class="description">
+        Read short stories and poems<br />of many different genre.
+      </p>
+      <br />
+      <button class="browseButton">Browse</button>
+    </div>
+  </body>
+  <script>
+    let browseButton = document.querySelector(".browseButton");
+    browseButton.addEventListener("click", () => {
+      window.open("pages/browse.html", "_self");
+    });
+  </script>
+  <script src="components/navbar.js" type="module"></script>
+  <script src="components/card.js" type="module"></script>
+</html>

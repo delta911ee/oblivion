@@ -1,0 +1,48 @@
+body {
+  background-image: url("../assets/bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+.browseButton {
+  width: 200px;
+  height: 60px;
+  background-color: #5e26f5;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 40px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.browseButton:hover {
+  background-color: #440fda;
+  border: none;
+}
+
+.navRight {
+  color: white;
+}
