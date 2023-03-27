@@ -50,32 +50,31 @@ function renderNoContent() {
   results.appendChild(d);
 }
 
-function renderByGenre(t) {
+function renderCards(t) {
   flexToGrid();
   clearAllResults();
   data.forEach((item) => {
-    if (item.contentGenre.toLowerCase() == t.toLowerCase()) {
+    let words = item.contentDescription.split(" ");
+    let inputWords = t.split(" ");
+    let intersection = words.filter((x) => inputWords.includes(x));
+    if (intersection.length >= 1) {
       let card = document.createElement("custom-card");
       card.setAttribute("contentId", item.contentId);
       card.setAttribute("contentImage", item.contentImage);
       results.appendChild(card);
     }
   });
+  let e = results.childNodes;
+  if (e.length == 0) {
+    renderNoContent();
+  }
 }
 
 function fetchCards() {
   clearAllResults();
   let searchQuery = searchBox.value;
   searchQueryText.innerText = "Results for : " + searchQuery;
-  genres.forEach((item) => {
-    if (item == searchQuery.toLowerCase()) {
-      renderByGenre(searchQuery);
-    }
-  });
-  let e = results.childNodes;
-  if (e.length == 0) {
-    renderNoContent();
-  }
+  renderCards(searchQuery);
 }
 
 searchButton.addEventListener("click", () => {

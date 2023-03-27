@@ -59,7 +59,7 @@ navBar.innerHTML = `
     <div class="navRight">
         <a class="item" id="home" href="../home.html">Home</a>
         <a class="item" id="browse" href="../pages/browse.html">Browse</a>
-        <a class="item" id="about" href="../pages/about.html">About</a>
+        <a class="item" id="about" href="../pages/help.html">Help</a>
         <a class="item" id="support" href="../pages/donate.html">Donate</a>
     </div>
 </div>
