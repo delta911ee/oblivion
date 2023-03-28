@@ -33,8 +33,7 @@ card.innerHTML = `
 
 </style>
 
-<div class="cardContainer skeleton">
-</div>
+<img class="cardContainer skeleton">
 
 `;
 
@@ -44,12 +43,8 @@ class Card extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(card.content.cloneNode(true));
     setTimeout(() => {
-      this.shadowRoot
-        .querySelector(".cardContainer")
-        .setAttribute(
-          "style",
-          "background-image: url(" + this.getAttribute("contentImage") + ")"
-        );
+      this.shadowRoot.querySelector(".cardContainer").src =
+        this.getAttribute("contentImage");
     }, 10);
     this.shadowRoot
       .querySelector(".cardContainer")
@@ -57,11 +52,13 @@ class Card extends HTMLElement {
         let cId = this.getAttribute("contentId");
         window.open("../pages/viewer.html?cId=" + cId, "_self");
       });
-    setTimeout(() => {
-      this.shadowRoot
-        .querySelector(".cardContainer")
-        .classList.remove("skeleton");
-    }, 10000);
+    this.shadowRoot
+      .querySelector(".cardContainer")
+      .addEventListener("load", () => {
+        this.shadowRoot
+          .querySelector(".cardContainer")
+          .classList.remove("skeleton");
+      });
   }
 }
 
