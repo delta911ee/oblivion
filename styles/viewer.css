@@ -38,3 +38,8 @@ body {
 br {
   margin: 20px;
 }
+
+.footerInfo {
+  font-size: 25px;
+  color: #279be3;
+}

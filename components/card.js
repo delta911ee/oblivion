@@ -13,13 +13,27 @@ card.innerHTML = `
     transition:0.4s ease;
 }
 
+.skeleton{
+  background-color:#949494;
+  animation: skeleton 0.5s linear infinite alternate;
+}
+
+@keyframes skeleton{
+  50%{
+    background-color:#949494;
+  }
+  100%{
+    background-color:#595959;
+  }
+}
+
 .cardContainer:hover{
   box-shadow: rgba(0,0,0,0.7) 0px 7px 29px 0px;
 }
 
 </style>
 
-<div class="cardContainer">
+<div class="cardContainer skeleton">
 </div>
 
 `;
@@ -43,6 +57,11 @@ class Card extends HTMLElement {
         let cId = this.getAttribute("contentId");
         window.open("../pages/viewer.html?cId=" + cId, "_self");
       });
+    setTimeout(() => {
+      this.shadowRoot
+        .querySelector(".cardContainer")
+        .classList.remove("skeleton");
+    }, 10000);
   }
 }
 

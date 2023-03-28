@@ -5,7 +5,8 @@ export const data = [
     contentId: "eelos1",
     contentName: "The Abandoned Asylum",
     contentType: "Short story",
-    contentImage: "../data/cImg/eelos1.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eelos1.svg",
     contentGenre: "Horror",
     contentUploadDate: "25/3/23",
     contentText:
@@ -18,7 +19,8 @@ export const data = [
     contentId: "enotop2",
     contentName: "The Symphony Of Nature",
     contentType: "Poem",
-    contentImage: "../data/cImg/enotop2.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/enotop2.svg",
     contentGenre: "Poetry",
     contentUploadDate: "25/3/23",
     contentText:
@@ -30,7 +32,8 @@ export const data = [
     contentId: "ecios3",
     contentName: "The Sock Detective",
     contentType: "Short story",
-    contentImage: "../data/cImg/ecios3.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/ecios3.svg",
     contentGenre: "Comedy",
     contentUploadDate: "27/3/23",
     contentText:
@@ -43,7 +46,8 @@ export const data = [
     contentId: "esoos4",
     contentName: "The Last Survivors",
     contentType: "Short story",
-    contentImage: "../data/cImg/esoos4.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/esoos4.svg",
     contentGenre: "Science fiction",
     contentUploadDate: "27/3/23",
     contentText:
@@ -56,13 +60,44 @@ export const data = [
     contentId: "deop5",
     contentName: "Shattered Lives",
     contentType: "Poem",
-    contentImage: "../data/cImg/deop5.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/deop5.svg",
     contentGenre: "Poetry",
     contentUploadDate: "27/3/23",
     contentText:
       "The bombs fell from the sky,The world was torn apart, Families scattered far and wide, As death consumed each heart.\n\nThe screams of agony filled the air, As chaos reigned supreme, The stench of death and burning flesh, A nightmare, not a dream.\n\nNo mercy, no compassion shown, As bullets flew and shells exploded, The innocent, the guilty, all alone,In a world forever corroded.\n\nThe once-beautiful cities and towns, Reduced to rubble and dust, Lives destroyed and dreams shattered, In a war that none could trust.\n\nThe cost of war, beyond all measure, Lives lost, families torn apart, A legacy of pain and suffering, Etched forever in each heart.\n\nLet us remember the horrors of war, The shattered lives, the pain endured, And vow to build a world of peace, Where love and understanding are secured.\n",
     contentDescription:
       "poem poetry shattered lives war wars bombs torn agony death burning bullets explosion lost pain innocent guilty poems",
+    contentAuthor: "Oblivion Team",
+  },
+  {
+    contentId: "eoios6",
+    contentName: "The Zorgon Invasion",
+    contentType: "Short story",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eoios6.svg",
+    contentGenre: "Science fiction",
+    contentUploadDate: "28/3/23",
+    contentText:
+      "The day had started like any other day. The sun rose, the birds sang, and people went about their daily routines. But then, something strange happened. The sky turned dark, and a strange spacecraft appeared in the sky. It was unlike anything humanity had ever seen before, with its sleek silver exterior and strange markings.\n\nPeople gathered in the streets, staring up at the spacecraft in awe and wonder. Suddenly, a bright light emanated from the spacecraft, blinding everyone. When the light faded, strange beings emerged from the craft. They were tall, with long limbs and large, almond-shaped eyes.\n\nThe aliens introduced themselves as the Zorgons, hailing from the distant planet of Zorgonia. They came in peace, they said, and they wished to establish communication and cooperation with humanity. At first, people were skeptical, but as the days went by, the Zorgons proved themselves to be benevolent and helpful.\n\nThey shared their advanced technology with humanity, curing diseases, ending poverty, and solving environmental problems. People were grateful, and for a time, it seemed like the Zorgons and humanity could coexist peacefully.\n\nHowever, as time passed, the Zorgons started to impose their own values and beliefs on humanity. They began to restrict individual freedom, and dissent was met with punishment. Slowly but surely, humanity started to lose its independence and autonomy.\n\nThe Zorgons claimed that their restrictions were necessary for the greater good, that their values were superior to those of humanity. They promised to create a utopian society, free of war and conflict, where every individual's needs would be met.\n\nBut not everyone was convinced. Some humans started to speak out against the Zorgons, demanding their freedom and autonomy. But the Zorgons were quick to silence them, using their advanced technology to suppress any opposition.\n\nAt first, the humans who spoke out were seen as troublemakers, malcontents who couldn't see the big picture. But as time went on, more and more people began to see the Zorgons for what they truly were: a group of aliens who had taken over their planet and were ruling it with an iron fist.\n\nBut still, people remained complacent. They had become accustomed to the Zorgons' presence and had grown dependent on their technology. And so, humanity perished not through violence, but through submission and apathy.\n\nThe Zorgons had taken over, and Earth was no longer the same. The once-free and vibrant planet had become a lifeless husk, ruled by an alien race that had promised peace and prosperity, but delivered only enslavement.\n\nYears passed, and the Zorgons continued to rule over humanity. But some humans never forgot their freedom, and they continued to fight against their oppressors in secret, hoping that one day they could overthrow the Zorgon regime and reclaim their planet. But for now, they lived in fear, hoping that one day things would change.\n",
+    contentDescription:
+      "alien invasion strange aliens spacecrafts spacecraft reckoning fear hope zorgons advanced technology tech freedom loss dissent suppression stories science fiction story suppression complacency enslavement rebellion planet restriction zorgon",
+    contentAuthor: "Oblivion Team",
+    footerInfo:
+      "PART 2 : Search for 'The Rebellion' or click <a href='../pages/viewer.html?cId=eoos6'>here</a><br>",
+  },
+  {
+    contentId: "eoos6",
+    contentName: "The Rebellion",
+    contentType: "Short story",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eoos6.svg",
+    contentGenre: "Science fiction",
+    contentUploadDate: "28/3/23",
+    contentText:
+      "Despite the Zorgons' best efforts to suppress dissent, a small group of humans remained determined to resist their alien oppressors. They knew that they had to act quickly, before the Zorgons' grip on the planet grew even tighter.\n\nFortunately, they had a secret weapon: the Zorgons' own advanced technology. Over the years, the humans had secretly studied and reverse-engineered the Zorgon's technology, learning how to use it for their own purposes.\n\nWith their newfound knowledge, the human resistance launched a series of covert attacks against the Zorgons. They sabotaged their communication networks, destroyed their weapons and vehicles, and disrupted their supply lines.\n\nThe Zorgons were caught off guard. They had grown complacent in their rule over humanity and never expected them to have the ability to fight back. But the humans were resourceful and determined, and they continued to strike at the Zorgons' weak points.\n\nAs the human resistance grew stronger, more people joined their cause. They came from all walks of life: scientists, engineers, soldiers, and civilians. They shared a common goal: to retake control of their planet from the alien invaders.\n\nFinally, the day came when the humans launched their final assault against the Zorgons. They had developed a weapon that could disrupt the Zorgon's neural network, rendering them unconscious and vulnerable.\n\nThe human resistance struck at the heart of the Zorgon's stronghold, using their advanced technology to penetrate their defenses. In a fierce battle, the humans fought against the Zorgons, taking down their soldiers one by one.\n\nAs the battle raged on, the humans activated their weapon, sending a massive surge of energy through the Zorgon's neural network. The Zorgons fell to the ground, unconscious and helpless.\n\nWith the Zorgons defeated, the humans rejoiced. They had retaken control of their planet and reclaimed their freedom. They dismantled the Zorgon's oppressive regime, and established a new society based on the principles of democracy and individual rights.\n\nYears later, humanity looked back on the Zorgon invasion as a dark chapter in their history. But they also remembered the courage and determination of the human resistance, who had fought against all odds to retake their planet and restore their freedom.\n",
+    contentDescription:
+      "alien invasion spacecraft aliens spacecrafts story stories science fiction rebillion humans resistance uprising revolt fight guerilla warfare oppression occupation rule overthrow independence hope zorgon zorgons",
     contentAuthor: "Oblivion Team",
   },
 ];

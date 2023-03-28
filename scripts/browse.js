@@ -1,17 +1,10 @@
 import { data } from "../data/main.js";
 import { recentIds } from "../data/recent.js";
 
-let searchContainer = document.getElementById("searchContainer");
 let searchBox = document.getElementById("searchBox");
 let searchButton = document.getElementById("searchButton");
 let searchQueryText = document.getElementById("searchQueryText");
 let results = document.getElementById("results");
-
-let genres = [];
-
-data.forEach((item) => {
-  genres.push(item.contentGenre.toLowerCase());
-});
 
 function clearAllResults() {
   while (results.firstChild) {

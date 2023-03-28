@@ -1,22 +1,37 @@
 export const recentIds = [
   {
     contentId: "eelos1",
-    contentImage: "../data/cImg/eelos1.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eelos1.svg",
   },
   {
     contentId: "enotop2",
-    contentImage: "../data/cImg/enotop2.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/enotop2.svg",
   },
   {
     contentId: "ecios3",
-    contentImage: "../data/cImg/ecios3.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/ecios3.svg",
   },
   {
     contentId: "esoos4",
-    contentImage: "../data/cImg/esoos4.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/esoos4.svg",
   },
   {
     contentId: "deop5",
-    contentImage: "../data/cImg/deop5.svg",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/deop5.svg",
+  },
+  {
+    contentId: "eoios6",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eoios6.svg",
+  },
+  {
+    contentId: "eoos6",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eoos6.svg",
   },
 ];

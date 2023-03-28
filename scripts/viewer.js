@@ -1,4 +1,5 @@
 import { data } from "../data/main.js";
+let contentContainer = document.querySelector(".contentContainer");
 let contentTitle = document.querySelector(".contentTitle");
 let contentType = document.querySelector(".contentType");
 let contentGenre = document.querySelector(".contentGenre");
@@ -23,6 +24,12 @@ function loadContent() {
       contentAuthor.innerText = "By : " + element.contentAuthor;
       contentUploadDate.innerText = "Uploaded : " + element.contentUploadDate;
       contentHolder.innerText = element.contentText;
+      if (element.hasOwnProperty("footerInfo")) {
+        let i = document.createElement("div");
+        i.classList.add("footerInfo");
+        i.innerHTML = element.footerInfo;
+        contentContainer.appendChild(i);
+      }
     }
   });
 }
