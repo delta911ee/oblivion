@@ -23,7 +23,7 @@ body {
 
 .searchBox {
   width: 40vw;
-  height: 4vh;
+  height: 3vh;
   font-size: 25px;
   padding: 20px;
   border: 2px solid gray;
@@ -49,19 +49,23 @@ body {
   background-color: #440fda;
 }
 
-.resultBox {
+.resultBox,
+.allBox {
   width: 95vw;
   height: fit-content;
 }
 
-.searchQueryText {
+.searchQueryText,
+.all {
   display: flex;
   font-size: 45px;
+  font-weight: 900;
   align-items: center;
   margin-bottom: 5vh;
 }
 
-.grid {
+.grid,
+.allResults {
   display: grid;
   height: fit-content;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -78,4 +82,8 @@ body {
 .noContent {
   text-align: center;
   font-size: 25px;
+}
+
+.hidden {
+  display: none;
 }

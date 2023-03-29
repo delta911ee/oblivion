@@ -5,10 +5,15 @@ let searchBox = document.getElementById("searchBox");
 let searchButton = document.getElementById("searchButton");
 let searchQueryText = document.getElementById("searchQueryText");
 let results = document.getElementById("results");
+let allResults = document.getElementById("allResults");
+let all = document.querySelector(".all");
 
 function clearAllResults() {
   while (results.firstChild) {
     results.removeChild(results.firstChild);
+  }
+  while (allResults.firstChild) {
+    allResults.removeChild(allResults.firstChild);
   }
 }
 
@@ -34,6 +39,18 @@ function renderRecent() {
   });
 }
 
+function renderAll() {
+  if (all.classList.contains("hidden")) {
+    all.classList.remove("hidden");
+  }
+  data.forEach((item) => {
+    let card = document.createElement("custom-card");
+    card.setAttribute("contentId", item.contentId);
+    card.setAttribute("contentImage", item.contentImage);
+    allResults.appendChild(card);
+  });
+}
+
 function renderNoContent() {
   gridToFlex();
   clearAllResults();
@@ -44,6 +61,7 @@ function renderNoContent() {
 }
 
 function renderCards(t) {
+  all.classList.add("hidden");
   flexToGrid();
   clearAllResults();
   data.forEach((item) => {
@@ -73,6 +91,7 @@ function fetchCards() {
 searchButton.addEventListener("click", () => {
   if (searchBox.value == "") {
     renderRecent();
+    renderAll();
   } else {
     fetchCards();
   }
@@ -91,7 +110,11 @@ window.addEventListener("keydown", (e) => {
     searchBox.value == ""
   ) {
     renderRecent();
+    renderAll();
   }
 });
 
-window.addEventListener("load", renderRecent);
+window.addEventListener("load", () => {
+  renderRecent();
+  renderAll();
+});

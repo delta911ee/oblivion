@@ -1,4 +1,5 @@
 // Tasks
-4 - create gui for new content insertion
 5 - Switch to a database soon?
 6 - improve keywords
+7 - responsiveness
+8 - dark mode
