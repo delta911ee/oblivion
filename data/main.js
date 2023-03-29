@@ -1,5 +1,3 @@
-// current genres = [Horror, Poetry, Comedy, Science fiction]
-
 export const data = [
   {
     contentId: "eelos1",

@@ -14,16 +14,15 @@ card.innerHTML = `
 }
 
 .skeleton{
-  background-color:#949494;
   animation: skeleton 0.5s linear infinite alternate;
 }
 
 @keyframes skeleton{
-  50%{
-    background-color:#949494;
+  0%{
+    background-color: #a3b8c2;
   }
   100%{
-    background-color:#595959;
+    background-color: #f0f3f5;
   }
 }
 
