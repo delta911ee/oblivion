@@ -1,8 +1,28 @@
 body {
-  background-image: url("../assets/bg.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
   color: white;
+  overflow-x: hidden;
+  background-image: url("../assets/bg.svg");
+  background-position: left;
+  background-size: 500%;
+  animation: slideAround 20s ease-in-out infinite alternate;
+}
+
+@keyframes slideAround {
+  0% {
+    background-position: left;
+  }
+  25% {
+    background-position: center;
+  }
+  50% {
+    background-position: right;
+  }
+  75% {
+    background-position: center;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 .hero {
@@ -16,14 +36,36 @@ body {
 }
 
 .title {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 70px;
+  width: 100vw;
   margin-bottom: 20px;
+  animation: slideLeft 2s cubic-bezier(0.66, 1.16, 0.88, 0.62);
+}
+
+@keyframes slideLeft {
+  from {
+    margin-left: 200vw;
+  }
+  to {
+    margin-left: 0vw;
+  }
 }
 
 .description {
   font-size: 35px;
   margin-bottom: 40px;
+  width: 60vw;
+  animation: slideRight 2s cubic-bezier(0.66, 1.16, 0.88, 0.62);
+}
+
+@keyframes slideRight {
+  from {
+    margin-right: 200vw;
+  }
+  to {
+    margin-right: 0vw;
+  }
 }
 
 .browseButton {
@@ -45,4 +87,30 @@ body {
 
 .navRight {
   color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
 }

@@ -21,7 +21,7 @@ navBar.innerHTML = `
     cursor:pointer;
 }
 
-.shelfLogo{
+.oblivionLogo{
     width:50px;
     height:50px;
     margin:10px;
@@ -50,10 +50,42 @@ navBar.innerHTML = `
     text-decoration:none;
 }
 
+@media screen and (max-width:700px){
+  .container{
+    flex-direction:column;
+  }
+}
+
+@media screen and (max-width:480px){
+  .logoText{
+    font-size:35px;
+  }
+  .oblivionLogo{
+    width:45px;
+    height:45px;
+  }
+  .item{
+    font-size:15px;
+  }
+}
+
+@media screen and (max-width:320px){
+  .item{
+    padding:10px;
+  }
+  .oblivionLogo{
+    width:35px;
+    height:35px;
+  }
+  .logoText{
+    font-size:30px;
+  }
+}
+
 </style>
 <div class="container">
     <div class="navLeft">
-        <img class="shelfLogo" src="../assets/logo.svg"></img>
+        <img class="oblivionLogo" src="../assets/logo.svg"></img>
         <h1 class="logoText">Oblivion</h1>
     </div>
     <div class="navRight">
