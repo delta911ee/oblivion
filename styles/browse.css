@@ -15,14 +15,14 @@ body {
   width: 55vw;
   height: 10vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   transition: 0.2s ease;
   margin-bottom: 5vh;
 }
 
 .searchBox {
-  width: 40vw;
+  width: 400px;
   height: 3vh;
   font-size: 25px;
   padding: 20px;
@@ -86,4 +86,85 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .searchContainer {
+    width: 75vw;
+  }
+  .searchBox {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .searchContainer {
+    width: 100vw;
+  }
+  .searchBox {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .searchContainer {
+    margin-top: 10vh;
+  }
+  .searchBox {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .searchBox {
+    width: 200px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .searchContainer {
+    flex-direction: column;
+    height: 20vh;
+  }
+  .searchBox {
+    height: 2vh;
+    width: 240px;
+    margin-bottom: 0.5vh;
+  }
+  .searchButton {
+    width: 285px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .grid,
+  .allResults {
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .grid,
+  .allResults {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .grid,
+  .allResults {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .grid,
+  .allResults {
+    grid-template-columns: 100%;
+    place-items: center;
+  }
+  .searchQueryText,
+  .all {
+    justify-content: center;
+  }
 }

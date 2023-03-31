@@ -1,10 +1,21 @@
+body {
+  overflow: hidden;
+}
+
 .main {
   display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 80vh;
   justify-content: center;
+  align-items: center;
 }
 
 .title {
   font-size: 60px;
+  margin-bottom: 40px;
+}
+
+iframe {
+  margin-bottom: 40px;
 }

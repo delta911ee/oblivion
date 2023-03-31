@@ -1,7 +1,28 @@
+body {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 70px;
+}
+
 .main {
   width: 100vw;
-  height: 80vh;
+  height: fit-content;
   display: flex;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-size: 30px;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 60px;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 25px;
 }
