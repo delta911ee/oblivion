@@ -1,5 +1,3 @@
-import { COLORS } from "../assets/colors.js";
-
 const navBar = document.createElement("template");
 
 navBar.innerHTML = `
@@ -102,11 +100,13 @@ class NavBar extends HTMLElement {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(navBar.content.cloneNode(true));
+    let logoText = this.shadowRoot.querySelector(".logoText");
+    logoText.setAttribute("style", "color:" + this.getAttribute("color"));
     let items = this.shadowRoot.querySelectorAll(".item");
     items.forEach((item) => {
       item.setAttribute("style", "color:" + this.getAttribute("color"));
       item.addEventListener("mouseover", () => {
-        item.setAttribute("style", "color:" + COLORS.logoBg);
+        item.setAttribute("style", "color:" + this.getAttribute("hoverColor"));
       });
       item.addEventListener("mouseout", () => {
         item.setAttribute("style", "color:" + this.getAttribute("color"));

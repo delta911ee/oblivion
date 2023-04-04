@@ -1,5 +1,3 @@
-import { COLORS } from "../assets/colors.js";
-
 const card = document.createElement("template");
 
 card.innerHTML = `

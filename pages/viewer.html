@@ -9,20 +9,36 @@
     <link rel="stylesheet" href="../styles/viewer.css" />
   </head>
   <body>
-    <nav-bar color="black"></nav-bar>
-    <div class="contentContainer">
-      <div class="contentInfo">
-        <div class="title">
-          <h1 class="contentTitle"></h1>
+    <nav-bar color="#440fda" hoverColor="#db184f"></nav-bar>
+    <div class="contentContainer" id="contentContainer">
+      <div class="contentInfoAndOps">
+        <div class="cInfo">
+          <div class="title">
+            <h1 class="contentTitle"></h1>
+          </div>
+          <div class="extraInfo">
+            <p class="contentType"></p>
+            <p>&bull;</p>
+            <p class="contentGenre"></p>
+            <p>&bull;</p>
+            <p class="contentAuthor"></p>
+            <p>&bull;</p>
+            <p class="contentUploadDate"></p>
+          </div>
         </div>
-        <div class="extraInfo">
-          <p class="contentType"></p>
-          <p>&bull;</p>
-          <p class="contentGenre"></p>
-          <p>&bull;</p>
-          <p class="contentAuthor"></p>
-          <p>&bull;</p>
-          <p class="contentUploadDate"></p>
+        <div class="cActions">
+          <img
+            src="../assets/moon.png"
+            class="lightToDark"
+            id="themeChanger"
+            alt="Change theme"
+          />
+          <img
+            src="../assets/shareBlack.png"
+            alt="Share"
+            class="share"
+            id="share"
+          />
         </div>
       </div>
       <div class="contentHolder" id="contentHolder"></div>
