@@ -89,7 +89,7 @@ navBar.innerHTML = `
         <h1 class="logoText">Oblivion</h1>
     </div>
     <div class="navRight">
-        <a class="item" id="home" href="../home.html">Home</a>
+        <a class="item" id="home" href="../index.html">Home</a>
         <a class="item" id="browse" href="../pages/browse.html">Browse</a>
         <a class="item" id="about" href="../pages/help.html">Help</a>
         <a class="item" id="support" href="../pages/donate.html">Donate</a>
@@ -113,7 +113,7 @@ class NavBar extends HTMLElement {
       });
     });
     this.shadowRoot.querySelector(".navLeft").addEventListener("click", () => {
-      window.open("../home.html", "_self");
+      window.open("../index.html", "_self");
     });
   }
 }

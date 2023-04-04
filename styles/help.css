@@ -23,6 +23,22 @@ h1 {
 }
 
 p {
+  max-width: 80vw;
   margin-bottom: 40px;
   font-size: 25px;
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    margin-top: 5vh;
+  }
+  .question {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .question {
+    font-size: 15px;
+  }
 }

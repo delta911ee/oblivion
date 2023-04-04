@@ -7,7 +7,7 @@ qaBar.innerHTML = `
     height:30vh;
     color:white;
     font-size:25px;
-    margin-bottom:80px;
+    margin-bottom:100px;
 }
 .question{
     background-color:#292929;
@@ -24,6 +24,7 @@ qaBar.innerHTML = `
 .question, .answer{
     width:70vw;
     min-height:15vh;
+    font-size:25px;
     height:fit-content;
     padding:10px;
     display:flex;
@@ -36,6 +37,19 @@ a{
     text-decoration:none;
     color:#440fda;
 }
+
+@media screen and (max-width:700px){
+  .question, .answer{
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width:480px){
+  .question, .answer{
+    font-size:15px;
+  }
+}
+
 </style>
 
 <div class="parent">

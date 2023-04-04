@@ -43,3 +43,47 @@ br {
   font-size: 25px;
   color: #279be3;
 }
+
+@media screen and (max-width: 1349px) {
+  .contentInfo {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .contentHolder {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contentInfo {
+    margin-top: 5vh;
+  }
+  .contentHolder {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .extraInfo,
+  .contentInfo {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .extraInfo {
+    display: none;
+  }
+  .contentInfo {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contentHolder {
+    font-size: 15px;
+  }
+}
