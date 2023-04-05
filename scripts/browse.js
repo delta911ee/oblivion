@@ -8,6 +8,8 @@ let results = document.getElementById("results");
 let allResults = document.getElementById("allResults");
 let all = document.querySelector(".all");
 
+all.textContent = "All " + "(" + data.length + ")";
+
 function clearAllResults() {
   while (results.firstChild) {
     results.removeChild(results.firstChild);

@@ -24,7 +24,7 @@ function loadContent() {
       contentTitle.innerText = element.contentName;
       contentType.innerText = element.contentType;
       contentGenre.innerText = element.contentGenre;
-      contentAuthor.innerText = "By : " + element.contentAuthor;
+      contentAuthor.innerHTML = "By : " + element.contentAuthor;
       contentUploadDate.innerText = "Uploaded : " + element.contentUploadDate;
       contentHolder.innerText = element.contentText;
       if (element.hasOwnProperty("footerInfo")) {

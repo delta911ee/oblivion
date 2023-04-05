@@ -1,22 +1,24 @@
+import { data } from "./main.js";
+
 export const recentIds = [
   {
-    contentId: "esoos4",
-    contentImage:
-      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/esoos4.svg",
+    contentId: data[data.length - 1].contentId,
+    contentImage: data[data.length - 1].contentImage,
   },
   {
-    contentId: "deop5",
-    contentImage:
-      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/deop5.svg",
+    contentId: data[data.length - 2].contentId,
+    contentImage: data[data.length - 2].contentImage,
   },
   {
-    contentId: "eoios6",
-    contentImage:
-      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eoios6.svg",
+    contentId: data[data.length - 3].contentId,
+    contentImage: data[data.length - 3].contentImage,
   },
   {
-    contentId: "eoos6",
-    contentImage:
-      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/cd977a49476a7edc7e7c29d0f54aa4a4ea99405d/cImg/eoos6.svg",
+    contentId: data[data.length - 4].contentId,
+    contentImage: data[data.length - 4].contentImage,
+  },
+  {
+    contentId: data[data.length - 5].contentId,
+    contentImage: data[data.length - 5].contentImage,
   },
 ];

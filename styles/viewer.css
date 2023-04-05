@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  transition: background-color, 0.5s ease;
 }
 
 .contentContainer {
@@ -30,26 +31,22 @@ body {
 }
 
 .cActions {
-  width: 10vw;
+  width: 80vw;
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.lightToDark,
-.darkToLight,
-.share {
+.cActions > img {
   width: 40px;
   height: 40px;
+  margin-inline: 20px;
   transition: 0.2s ease;
 }
 
-.lightToDark:hover,
-.darkToLight:hover,
-.share:hover {
-  width: 45px;
-  height: 45px;
+.cActions > img:hover {
+  cursor: pointer;
 }
 
 .extraInfo {
@@ -58,6 +55,10 @@ body {
 
 .extraInfo > p {
   padding: 10px;
+}
+
+.extraInfo > p > a {
+  text-decoration: none;
 }
 
 .contentHolder {
@@ -78,7 +79,7 @@ br {
 }
 
 @media screen and (max-width: 1349px) {
-  .contentInfo {
+  .cInfo {
     flex-direction: column;
     justify-content: center;
   }
@@ -91,17 +92,24 @@ br {
 }
 
 @media screen and (max-width: 700px) {
-  .contentInfo {
-    margin-top: 5vh;
+  .contentInfoAndOps {
+    margin-top: 10vh;
   }
   .contentHolder {
     font-size: 20px;
   }
 }
 
+@media screen and (max-width: 620px) {
+  .cActions > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .extraInfo,
-  .contentInfo {
+  .contentInfoAndOps {
     font-size: 12px;
   }
 }
@@ -110,7 +118,7 @@ br {
   .extraInfo {
     display: none;
   }
-  .contentInfo {
+  .contentInfoAndOps {
     margin-top: 0px;
   }
 }
