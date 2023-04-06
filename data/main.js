@@ -12,7 +12,7 @@ export const data = [
     contentDescription:
       "horror story short asylums asylum abandoned ghost ghosthunters teenagers stories",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
   {
     contentId: "enotop2",
@@ -26,7 +26,7 @@ export const data = [
       "Amidst the verdant trees and rustling leaves, The symphony of nature hums and weaves, A melody of beauty, so sweet and pure, That fills the soul, and makes it secure.\n The soft rustle of leaves, like a gentle breeze, A sweet lullaby that puts the heart at ease, The chirping of birds, a joyous sound, That echoes through the woods, all around.\n The rustling of grass, the buzzing of bees, The fragrance of flowers, carried on the breeze, The trickling of streams, the patter of rain, All blending together, in a wondrous refrain.\n The rustling of leaves, the whistling of wind, The rustle of branches, that creak and bend, The symphony of nature, so grand and bold, A symphony that never grows old.\n For nature's melody is a timeless thing, That fills the heart with joy, and makes it sing, So let us pause, and listen with care, To the symphony of nature, so rare.\n",
     contentDescription: "poetry poem nature beauty symphony poems",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
   {
     contentId: "ecios3",
@@ -41,7 +41,7 @@ export const data = [
     contentDescription:
       "sock socks short story detective thief comedy police obsession collection stories",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
   {
     contentId: "esoos4",
@@ -56,7 +56,7 @@ export const data = [
     contentDescription:
       "science fiction short story last survivors virus cure scientists lab vaccine horror stories",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
   {
     contentId: "deop5",
@@ -71,7 +71,7 @@ export const data = [
     contentDescription:
       "poem poetry shattered lives war wars bombs torn agony death burning bullets explosion lost pain innocent guilty poems",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
   {
     contentId: "eoios6",
@@ -86,7 +86,7 @@ export const data = [
     contentDescription:
       "alien invasion strange aliens spacecrafts spacecraft reckoning fear hope zorgons advanced technology tech freedom loss dissent suppression stories science fiction story suppression complacency enslavement rebellion planet restriction zorgon",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
     footerInfo:
       "PART 2 : Search for 'The Rebellion' or click <a href='../pages/viewer.html?cId=eoos6'>here</a><br>",
   },
@@ -103,7 +103,7 @@ export const data = [
     contentDescription:
       "alien invasion spacecraft aliens spacecrafts story stories science fiction rebillion humans resistance uprising revolt fight guerilla warfare oppression occupation rule overthrow independence hope zorgon zorgons",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
   {
     contentId: "gva1os7",
@@ -111,14 +111,16 @@ export const data = [
     contentType: "Short story",
     contentImage:
       "https://raw.githubusercontent.com/delta911ee/oblivionCimg/d03b78705298299a851bafa8b1c42ae4de498d19/cImg/gva1os7.svg",
-    contentGenre: "Science fiction",
+    contentGenre: "Science fiction / Adventure",
     contentUploadDate: "30/3/23",
     contentText:
       "My name is Max, and I'm not from around here. I'm from a planet called Nova, which orbits a star called Vega, located millions of light-years away from Earth. Nova was a planet of superhumans, and I was one of them. I had the ability of invisibility. My three friends, Luna, Leo, and Olivia, were also from Nova and had their own unique abilities. Luna had the ability to shapeshift, Leo had the power of telekinesis, and Olivia could control and manipulate fire.\n\nWe were on a mission to explore the universe when our spaceship encountered a technical issue. We were travelling faster than the speed of light, and the stress on our ship's engines caused them to malfunction. We tried to fix it, but it was too late. We crash-landed on a remote hilly area of Earth, and our spaceship was badly damaged.\n\nAfter crash landing on Earth, we realized that our unique abilities set us apart from humans in a way that could draw unwanted attention. We quickly made the decision to blend in with humans, disguising our superhuman abilities and keeping our true identities a secret. People found us weird because we tried so hard to mimic normal human behavior, but we knew it was necessary to avoid drawing suspicion. Our abilities made us stand out, and we struggled to fit in with the crowd. We longed for a place where we could be ourselves and be free from any trouble.\n\nThat's when I came up with the idea of building a secret underground mini city. It would be a place where we could be ourselves and use our abilities without fear of being discovered. Luna, Leo, and Olivia were all on board with the idea, and we set to work immediately.\n\nIt wasn't easy building our underground city. We had to use our abilities to excavate the area, construct the buildings, and create a sustainable living environment. Luna's shapeshifting abilities came in handy when it came to designing and building the structures. Leo's telekinesis allowed him to move heavy objects with ease, and Olivia's control over fire was instrumental in creating a reliable source of energy.\n\nAs for me, my invisibility allowed me to move around undetected and gather the materials we needed. It was a tough and grueling task, but we persevered, and after months of hard work, our secret underground mini city was finally complete.\n\nAs I walked through the tunnels of our underground city, I marveled at the engineering prowess that had gone into its construction. Every room was meticulously planned and built by our own hands, with the use of our unique superhuman abilities.\n\nThe entrance was cleverly disguised, hidden away behind a maintenance closet in an abandoned building. Once inside, the first room greeted us with a spacious living area, complete with a kitchen, dining area, and comfortable seating. Shelves lined the walls, stocked with books, movies, and games to keep us entertained during our downtime. And in the corner, there was even a small garden, where Luna used her ability to manipulate plant growth to grow our own vegetables and herbs.\n\nBeyond the living area were a series of interconnected tunnels, each leading to different rooms. One was a workshop, filled with all the tools and equipment we needed to repair our damaged spaceship. Another was a gym, where we could train and hone our unique abilities. And then there was the medical room, where Olivia used her advanced healing abilities to tend to any injuries or illnesses we suffered.\n\nBut the crown jewel of our underground city was the massive central chamber. It was complete with a holographic projector that could display images of our home planet Nova. This room served as our command center, where we could strategize and plan our next moves in our mission to find a way back home. The walls were covered in maps and charts, and the room was equipped with the latest technology to aid in our efforts.\n\nDespite being hidden away from the outside world, our underground city was a thriving community. We had worked together tirelessly to create a safe and comfortable home for ourselves. And now, as we looked to the future, we were determined to find a way to return to Nova and continue our journey.\n\nOur city was a place of refuge and safety, and we felt like we had finally found our true home but, that was just a feeling. Our true and lovely home is Nova and only Nova. \n\nWe continued to live our double lives, going to high school during the day and returning to our underground city at night.\n\nOur abilities allowed us to live a life of luxury and freedom, but we knew that we couldn't stay hidden forever. We had to find a way to fix our spaceship and return to Nova, our true home. But for now, we were content to enjoy our newfound sanctuary and the company of our closest friends.\n",
     contentDescription:
-      "short story science fiction seeking nova one part 1 Superhuman Teenager Unique abilities Escape Secret Underground Mini city Nova Star Millions of light years Spaceship Technical issue Crash landed Hilly remote area Badly damaged Mimic human behavior Normal Weird Safe haven Adventure Science fiction Young adult fiction Friendship Sanctuary Survival Struggle Identity Otherworldly Home",
+      "short story science fiction adventure seeking nova one part 1 Superhuman Teenager Unique abilities Escape Secret Underground Mini city Nova Star Millions of light years Spaceship Technical issue Crash landed Hilly remote area Badly damaged Mimic human behavior Normal Weird Safe haven Adventure Science fiction Young adult fiction Friendship Sanctuary Survival Struggle Identity Otherworldly Home",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
+    footerInfo:
+      "PART 2 : Search for 'Seeking Nova Part 2' or click <a href='../pages/viewer.html?cId=gva2os10'>here</a>",
   },
   {
     contentId: "eteos8",
@@ -133,6 +135,51 @@ export const data = [
     contentDescription:
       "the fifth element short story science fiction dystopian vividity happiness success power sharing love kindness magic greed selfishness transformation peace prosperity generosity color life substance kingdoms wars community value beauty joy world era lesson",
     contentAuthor:
-      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✅</a>",
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
+  },
+  {
+    contentId: "yeos9",
+    contentName: "Ghostly Giggles",
+    contentType: "Short story",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/62b82fe91fcac2d17bc32aaa4c46f237914f7f8a/cImg/yeos9.svg",
+    contentGenre: "Comedy / Horror",
+    contentUploadDate: "6/4/23",
+    contentText:
+      "Once upon a time, in a small town called Spookyville, there lived a group of friends who loved nothing more than scaring each other. They would plan elaborate pranks and scare each other silly just for the fun of it. But one day, they took it too far.\n\nIt was Halloween night, and the friends had decided to explore the abandoned mansion on the edge of town. Legend had it that the mansion was haunted by the ghost of a wealthy eccentric who had died in a bizarre gardening accident. The friends were thrilled at the prospect of scaring each other silly in the spooky mansion.\n\nAs they entered the mansion, they noticed that it was eerily quiet. There was no sign of any ghosts or ghouls. Disappointed, they decided to explore the mansion anyway. They split up into pairs and went in search of scares.\n\nAs they wandered through the mansion, strange things started to happen. Doors would slam shut behind them, and eerie noises echoed through the empty halls. Suddenly, one of the friends disappeared without a trace. The others searched for him, but he was nowhere to be found.\n\nAs they searched, they stumbled upon a secret room hidden behind a bookshelf. Inside the room, they found their missing friend, tied up and gagged. Before they could free him, they were surrounded by a group of ghosts and ghouls, all intent on scaring the living daylights out of the friends.\n\nBut instead of being scared, the friends started to laugh. They had finally found the ultimate scare, and it was hilarious. The ghosts and ghouls were confused. They had never encountered anyone who found them funny before.\n\nThe friends and the ghosts and ghouls spent the rest of the night laughing and telling jokes. They had a blast scaring each other and being scared in return. From that night on, the friends and the ghosts and ghouls were the best of friends, always looking for new ways to scare and amuse each other.\n\nAnd so, the abandoned mansion became known as the friendliest haunted house in all of Spookyville. Visitors would come from far and wide to join in on the laughter and scares. And the friends? Well, they lived happily ever after, scaring and laughing their way through life.\n",
+    contentDescription:
+      "ghost ghostly giggle laugh comedy short story horror comedies giggles spooky horror friends pranks scary abandoned mansion ghosts ghouls laughter jokes scaring amusement Halloween spooky legend eccentric gardening accident eerie disappearance secret room bookshelf tied up gagged confused visitors hilarity life thrilled exploration elaborate startled surprise mysterious menacing panic terrified mirth friendship unconventional unusual eccentricity suspense mystery ghost stories occult spooky tales haunted houses supernatural creepy atmosphere claustrophobic chilling dreadful fearful foreboding macabre nerve-wracking ominous petrifying scary spine-tingling suspenseful tense terror thrilling uncanny weird",
+    contentAuthor:
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
+  },
+  {
+    contentId: "gva2os10",
+    contentName: "Seeking Nova Part 2",
+    contentType: "Short story",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/6b3f4dc9dbc812c728133ec4ffd0fcbb356b84a1/cImg/gva2os10.svg",
+    contentGenre: "Science fiction / Adventure",
+    contentUploadDate: "6/4/23",
+    contentText:
+      "Hello! Make sure you have read part 1. Search for 'Seeking Nova' in the browse page.\n\nDays turned into weeks, and weeks turned into months as we continued to live our double lives, going to school during the day and returning to our underground city at night. Our secret hideaway was our refuge, a place where we could be ourselves and use our abilities without fear of being discovered.\n\nAs time passed, our city continued to grow, with new rooms and technologies being added to aid us in our quest to fix our spaceship and return to Nova. I spent countless hours in the workshop, tinkering with the engines and trying to repair the damage that had been done during our crash landing. Leo worked tirelessly to construct a new power source, while Olivia focused on refining her healing abilities to make sure that we stayed healthy and injury-free.\n\nLuna, on the other hand, spent most of her time in the central chamber, poring over maps and data, trying to find a way back home. She was determined to find a solution to our problem, no matter how long it took.\n\nDespite our best efforts, however, progress was slow. It seemed like every time we fixed one problem, another one would arise. But we refused to give up, and instead, we drew strength from each other, relying on our friendship and our shared sense of purpose to keep us going.\n\nAs the months turned into years, we became more and more attached to our underground city. It was the only home we had ever known on Earth, and we had poured our hearts and souls into making it a comfortable and safe haven for ourselves. We had created a community of like-minded individuals, all of whom shared our desire to return to Nova.\n\nBut despite our close-knit community, we couldn't help but feel a sense of isolation. We were surrounded by humans, but we knew that we could never truly be a part of their world. Our abilities made us different, and that difference was something that we could never escape.\n\nAs I sat in the central chamber one day, staring at the holographic images of Nova, I couldn't help but feel a deep sense of longing. I missed my home planet, missed the familiar sights and sounds of the world that I had grown up in. And I knew that I wasn't alone in feeling this way. Luna, Leo, and Olivia all shared my sense of longing, and we talked about it often, reminiscing about the life we had left behind.\n\nBut despite our longing, we knew that we had a purpose on Earth. We were explorers, adventurers, and we were determined to make the best of our situation. So we continued to work, day in and day out, on our quest to repair our spaceship and find a way back home.\n\nIt was a slow and arduous process, but we refused to give up. And then, one day, after years of hard work and dedication, we finally made a breakthrough. We had repaired the engines, constructed a new power source, and installed the latest technology to aid us in our journey. We were finally ready to leave Earth and return to Nova.\n\nAs we stood in the central chamber, staring at the holographic images of our home planet, I couldn't help but feel a sense of excitement and anticipation. We had spent years preparing for this moment, and now it was finally here.\n\nWe said goodbye to our underground city, knowing that we might never see it again. It had been our refuge, our sanctuary, but now it was time to leave it behind and return to the life that we had left behind.\n\nWith a sense of determination and purpose, we boarded our repaired spaceship and blasted off into the unknown. Our journey back to Nova would be long and perilous, but we were ready for it. We were superhumans, explorers, and adventurers, and nothing could stand in our way.\n",
+    contentDescription:
+      "short story science fiction adventure seeking nova part 2 days weeks months double lives school underground city refuge abilities technologies workshop engines damage crash landing power source healing abilities central chamber maps data solution progress friendship shared purpose isolation holographic images longing explorers adventurers repaired spaceship power technology journey perilous superhumans blast off unknown nova determination",
+    contentAuthor:
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
+  },
+  {
+    contentId: "titnos11",
+    contentName: "Lost In The Unknown",
+    contentType: "Short story",
+    contentImage:
+      "https://raw.githubusercontent.com/delta911ee/oblivionCimg/f5f4c284637c5ad3e59a6c160302207f3f92a841/cImg/titnos11.svg",
+    contentGenre: "Drama / Adventure",
+    contentUploadDate: "7/4/23",
+    contentText:
+      "It was a wild night of partying for two best friends, Jack and David. They drank their way through the evening, dancing and laughing until the early hours of the morning. By the time they stumbled out of the nightclub, it was already three in the morning. They were barely able to stand and had to cling to each other for support.\n\nThankfully, they managed to flag down a taxi. The driver seemed friendly enough, but as they sat in the backseat, they began to feel uneasy. The taxi driver was driving recklessly, swerving and honking at every opportunity. The last thing they remembered was the driver offering them water and then blacking out.\n\nWhen they woke up, they were lying on the side of a deserted road, miles away from the city. They were both dressed in nothing but their underwear, shivering in the scorching sun. Their wallets, phones, and even their expensive suits were gone. They had no idea where they were or how to get back home.\n\nPanic set in as they realized they were stranded with no way to communicate or call for help. They desperately searched for any signs of civilization, but all they saw were barren fields and empty roads. They were weak and disoriented from the alcohol, and the heat was making them feel even worse. They knew they had to find a way back to the city, but they didn't know how.\n\nAs the day dragged on, they began to lose hope. They were exhausted and dehydrated, and the sun was beating down on them relentlessly. They tried to wave down passing cars, but no one stopped to help them. The thought of spending another night in the open terrified them. They felt helpless and alone, and their friendship was the only thing keeping them going.\n\nJack and David struggled to stand on their feet. They looked at each other with confusion and fear as they took in their surroundings. They were in a remote area, surrounded by barren fields and empty roads. They had no idea where they were or how they got there. The sun was already high up, and its scorching heat was burning their skin.\n\nThe two friends tried to recall the events of the previous night but their memories were hazy. They remembered partying hard and flagging down a taxi. But everything after that was a blur.\n\nIt was only then that they realized that they were dressed in nothing but their underwear. Their wallets, phones, and even their expensive suits were gone. They had been robbed by the taxi driver while they were unconscious.\n\nThe reality of their situation hit them hard. They were stranded in the middle of nowhere with no means of communication or transport. They were weak and disoriented from the alcohol, and the heat was making them feel even worse.\n\nJack and David tried to flag down passing cars, but none stopped to help them. They walked along the road, hoping to find a sign of civilization. But the road seemed to stretch on forever, with no end in sight.\n\nAs the day wore on, they began to feel hopeless. They were exhausted and dehydrated, and the sun was beating down on them relentlessly. They tried to ration the little water they had left, but it wasn't enough.\n\nAt one point, they thought they saw a car in the distance. But as it approached, they realized it was just a mirage. Their spirits were crushed, and they collapsed by the side of the road.\n\nFor hours, they lay there, feeling the life drain out of them. They had no idea how much time had passed, but it felt like an eternity. They thought about their families and friends, and how they would never see them again. They thought about all the things they wished they had done differently, and all the things they still wanted to do.\n\nJust when they had given up all hope, they saw a glimmer of light in the distance. They stumbled towards it, barely able to walk, and eventually came across a small village.\n\nThe villagers were kind and generous, giving them food, water, and clothes. They contacted the police, who were able to locate the taxi driver and recover their stolen belongings.\n\nDespite the ordeal they had been through, Jack and David emerged stronger and more grateful for their friendship. They had been pushed to the brink of despair, but they had found their way back home.\n\nThey knew that they could rely on each other no matter what, and that was all that mattered. From that day forward, they vowed to never take each other for granted and to always have each other's backs.\n\nThey returned home to their families and friends, who were overjoyed to see them alive and well. They were welcomed back with open arms and hearts, and they knew that they were loved.\n\nThe experience had changed them both, and they resolved to make the most of their lives. They traveled the world, explored new cultures, and tried new things. They cherished every moment and every experience, knowing that life was precious and unpredictable.\n\nYears later, as they looked back on that fateful day, they realized that it had been a turning point in their lives. It had taught them the value of friendship, the fragility of life, and the importance of seizing every moment.\n\nThey were grateful for the experience, and for each other. And they knew that no matter what happened, they would always have each other's backs.\n",
+    contentDescription:
+      "lost in the unknown drama adventure short story drunk friends taxi driver robbery stranded remote place sun hopelessness suffering happy ending unconscious heavy partying confusion fear surroundings barren fields empty roads hazy memories flagging down means of communication transport disoriented dehydrated exhaustion mirage families friends ordeal gratitude reliance turning point value of friendship fragility of life seizing every moment",
+    contentAuthor:
+      "<a href='mailto:readoblivion@gmail.com'>Oblivion Team ✔️</a>",
   },
 ];
