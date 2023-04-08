@@ -47,7 +47,7 @@ class Card extends HTMLElement {
       .querySelector(".cardContainer")
       .addEventListener("click", () => {
         let cId = this.getAttribute("contentId");
-        window.open("../pages/viewer.html?cId=" + cId, "_self");
+        window.open("../pages/viewer.html?cId=" + cId);
       });
     this.shadowRoot
       .querySelector(".cardContainer")
