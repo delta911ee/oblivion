@@ -10,20 +10,30 @@
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <nav-bar color="white" hoverColor="#db184f"></nav-bar>
+    <nav-bar logoColor="black" itemColor="gray" hoverColor="blue"></nav-bar>
     <div class="hero">
-      <h1 class="title">Welcome To Oblivion.</h1>
-      <br />
-      <p class="description">
-        Read short stories, poems, dramas, <br />
-        of many different genre.
-      </p>
-      <br />
-      <button class="browseButton">Browse</button>
+      <div class="heroLeft">
+        <img src="assets/heroLeftImg.jpg" alt="" />
+      </div>
+      <div class="heroRight">
+        <h1 class="title">Keep On Reading.</h1>
+        <br />
+        <p class="text">
+          Find hundreds of chat based as well as regular stories, and poems
+          which are actually worth reading.
+        </p>
+        <br />
+        <button class="btn browse">Browse</button>
+      </div>
     </div>
+    <div class="footer"></div>
   </body>
   <script>
-    let browseButton = document.querySelector(".browseButton");
+    let footer = document.querySelector(".footer");
+    let year = new Date().getFullYear();
+    footer.innerHTML = "&copy; " + year + " Oblivion";
+
+    let browseButton = document.querySelector(".browse");
     browseButton.addEventListener("click", () => {
       window.open("pages/browse.html", "_self");
     });

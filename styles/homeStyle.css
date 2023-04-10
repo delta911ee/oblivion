@@ -1,116 +1,45 @@
-body {
-  color: white;
-  overflow-x: hidden;
-  background-image: url("../assets/bg.svg");
-  background-position: left;
-  background-size: 500%;
-  animation: slideAround 20s ease-in-out infinite alternate;
-}
-
-@keyframes slideAround {
-  0% {
-    background-position: left;
-  }
-  25% {
-    background-position: center;
-  }
-  50% {
-    background-position: right;
-  }
-  75% {
-    background-position: center;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
 .hero {
   width: 100vw;
   height: 80vh;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > div {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 80vh;
+}
+
+.heroLeft {
+  width: 40vw;
+}
+
+.heroLeft > img {
+  width: 40vw;
+  aspect-ratio: 1.875;
+}
+
+.heroRight {
+  width: 60vw;
 }
 
 .title {
-  font-weight: 900;
-  font-size: 70px;
-  width: 100vw;
-  margin-bottom: 20px;
-  animation: slideLeft 2s cubic-bezier(0.66, 1.16, 0.88, 0.62);
+  font-size: 80px;
+  letter-spacing: -2px;
 }
 
-@keyframes slideLeft {
-  from {
-    margin-left: 200vw;
-  }
-  to {
-    margin-left: 0vw;
-  }
+br {
+  margin-top: 25px;
 }
 
-.description {
-  font-size: 35px;
-  margin-bottom: 40px;
-  width: 60vw;
-  animation: slideRight 2s cubic-bezier(0.66, 1.16, 0.88, 0.62);
-}
-
-@keyframes slideRight {
-  from {
-    margin-right: 200vw;
-  }
-  to {
-    margin-right: 0vw;
-  }
-}
-
-.browseButton {
-  width: 200px;
-  height: 60px;
-  background-color: #5e26f5;
-  border: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 40px;
-  transition: 0.2s ease;
-  cursor: pointer;
-}
-
-.browseButton:hover {
-  background-color: #440fda;
-  border: none;
-}
-
-.navRight {
-  color: white;
-}
-
-@media screen and (max-width: 700px) {
-  .title {
-    font-size: 45px;
-  }
-
-  .description {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .title {
-    font-size: 35px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  .title {
-    font-size: 30px;
-  }
-
-  .description {
-    font-size: 15px;
-  }
+.text {
+  font-size: 25px;
+  width: 40vw;
+  text-align: center;
+  color: black;
 }
