@@ -18,6 +18,8 @@ function getContentId() {
 
 let contentId = getContentId();
 
+function initChatStory(texts) {}
+
 function loadContent() {
   data.forEach((element) => {
     if (element.contentId == contentId) {
@@ -26,7 +28,11 @@ function loadContent() {
       contentGenre.innerText = element.contentGenre;
       contentAuthor.innerHTML = "By : " + element.contentAuthor;
       contentUploadDate.innerText = "Uploaded : " + element.contentUploadDate;
-      contentHolder.innerText = element.contentText;
+      if (element.contentType != "Chat story") {
+        contentHolder.innerText = element.contentText;
+      } else {
+        initChatStory(element.contentText);
+      }
       if (element.hasOwnProperty("footerInfo")) {
         let i = document.createElement("div");
         i.classList.add("footerInfo");

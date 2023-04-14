@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-top: 5vh;
   margin-bottom: 5vh;
 }
 
@@ -76,55 +77,4 @@ br {
 .footerInfo {
   font-size: 25px;
   color: #279be3;
-}
-
-@media screen and (max-width: 1349px) {
-  .cInfo {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 940px) {
-  .contentHolder {
-    font-size: 25px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .contentInfoAndOps {
-    margin-top: 10vh;
-  }
-  .contentHolder {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .cActions > img {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .extraInfo,
-  .contentInfoAndOps {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .extraInfo {
-    display: none;
-  }
-  .contentInfoAndOps {
-    margin-top: 0px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .contentHolder {
-    font-size: 15px;
-  }
 }

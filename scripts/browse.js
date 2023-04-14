@@ -1,103 +1,78 @@
 import { data } from "../data/main.js";
 import { recentIds } from "../data/recent.js";
 
+let tabButtons = document.querySelectorAll(".tabButton");
+let searchText = document.getElementById("searchText");
+let resultBox = document.getElementById("resultBox");
 let searchBox = document.getElementById("searchBox");
 let searchButton = document.getElementById("searchButton");
-let searchQueryText = document.getElementById("searchQueryText");
-let results = document.getElementById("results");
-let allResults = document.getElementById("allResults");
-let all = document.querySelector(".all");
 
-all.textContent = "All " + "(" + data.length + ")";
-
-function clearAllResults() {
-  while (results.firstChild) {
-    results.removeChild(results.firstChild);
+function popLast(s) {
+  let l = s.split("");
+  if (l.includes("s") || l.includes("S")) {
+    l.pop();
+    let newS = "";
+    l.forEach((e) => {
+      newS += e;
+    });
+    return newS;
+  } else {
+    return "";
   }
-  while (allResults.firstChild) {
-    allResults.removeChild(allResults.firstChild);
-  }
-}
-
-function gridToFlex() {
-  results.classList.remove("grid");
-  results.classList.add("flex");
-}
-
-function flexToGrid() {
-  results.classList.remove("flex");
-  results.classList.add("grid");
-}
-
-function renderRecent() {
-  searchQueryText.innerText = "Recent";
-  clearAllResults();
-  flexToGrid();
-  recentIds.forEach((item) => {
-    let card = document.createElement("custom-card");
-    card.setAttribute("contentId", item.contentId);
-    card.setAttribute("contentImage", item.contentImage);
-    results.appendChild(card);
-  });
-}
-
-function renderAll() {
-  if (all.classList.contains("hidden")) {
-    all.classList.remove("hidden");
-  }
-  data.forEach((item) => {
-    let card = document.createElement("custom-card");
-    card.setAttribute("contentId", item.contentId);
-    card.setAttribute("contentImage", item.contentImage);
-    allResults.appendChild(card);
-  });
-}
-
-function renderNoContent() {
-  gridToFlex();
-  clearAllResults();
-  let d = document.createElement("div");
-  d.classList.add("noContent");
-  d.innerText = "Sorry, No results were found for this search query.";
-  results.appendChild(d);
 }
 
 function renderCards(t) {
-  all.classList.add("hidden");
-  flexToGrid();
   clearAllResults();
   data.forEach((item) => {
     let words = item.contentDescription.split(" ");
-    let inputWords = t.split(" ");
+    let inputWords = // very bad code. Optimize later.
+      (
+        t +
+        " " +
+        t.toLowerCase() +
+        " " +
+        t.charAt(0).toLowerCase() +
+        t.slice(1) +
+        " " +
+        t +
+        "s" +
+        " " +
+        t.toUpperCase() +
+        " " +
+        t.charAt(0).toUpperCase() +
+        t.slice(1) +
+        " " +
+        popLast(t)
+      ).split(" ");
     let intersection = words.filter((x) => inputWords.includes(x));
     if (intersection.length >= 1) {
       let card = document.createElement("custom-card");
       card.setAttribute("contentId", item.contentId);
       card.setAttribute("contentImage", item.contentImage);
-      results.appendChild(card);
+      resultBox.appendChild(card);
+    }
+    let e = resultBox.childNodes;
+    if (e.length == 0) {
+      searchText.innerText = "No results were found for this query.";
+    } else {
+      searchText.innerText = e.length.toString() + " Results for " + t;
     }
   });
-  let e = results.childNodes;
-  if (e.length == 0) {
-    renderNoContent();
-  }
-}
-
-function fetchCards() {
-  clearAllResults();
-  let searchQuery = searchBox.value;
-  searchQueryText.innerText = "Results for : " + searchQuery;
-  renderCards(searchQuery);
 }
 
 searchButton.addEventListener("click", () => {
   if (searchBox.value == "") {
-    renderRecent();
-    renderAll();
+    setActive(tabButtons[0]);
   } else {
     fetchCards();
   }
 });
+
+function fetchCards() {
+  clearAllResults();
+  let searchQuery = searchBox.value;
+  renderCards(searchQuery);
+}
 
 window.addEventListener("keydown", (e) => {
   if (
@@ -111,12 +86,97 @@ window.addEventListener("keydown", (e) => {
     document.activeElement === searchBox &&
     searchBox.value == ""
   ) {
-    renderRecent();
-    renderAll();
+    setActive(tabButtons[0]);
   }
 });
 
+function clearAllResults() {
+  while (resultBox.firstChild) {
+    resultBox.removeChild(resultBox.firstChild);
+  }
+}
+
+function renderAll() {
+  clearAllResults();
+  searchText.innerText = "All (" + data.length + ")";
+  data.forEach((item) => {
+    let card = document.createElement("custom-card");
+    card.setAttribute("contentId", item.contentId);
+    card.setAttribute("contentImage", item.contentImage);
+    resultBox.appendChild(card);
+  });
+}
+
+function renderRecent() {
+  let i = 0;
+  clearAllResults();
+  recentIds.forEach((item) => {
+    let card = document.createElement("custom-card");
+    card.setAttribute("contentId", item.contentId);
+    card.setAttribute("contentImage", item.contentImage);
+    resultBox.appendChild(card);
+    i += 1;
+  });
+  searchText.innerText = "Recent (" + i + ")";
+}
+
+function renderStories() {
+  let i = 0;
+  clearAllResults();
+  data.forEach((item) => {
+    if (item.contentType == "Short story" || item.contentType == "Chat story") {
+      let card = document.createElement("custom-card");
+      card.setAttribute("contentId", item.contentId);
+      card.setAttribute("contentImage", item.contentImage);
+      resultBox.appendChild(card);
+      i += 1;
+    }
+  });
+  searchText.innerText = "Stories (" + i + ")";
+}
+
+function renderPoems() {
+  let i = 0;
+  clearAllResults();
+  data.forEach((item) => {
+    if (item.contentType == "Poem") {
+      let card = document.createElement("custom-card");
+      card.setAttribute("contentId", item.contentId);
+      card.setAttribute("contentImage", item.contentImage);
+      resultBox.appendChild(card);
+      i += 1;
+    }
+  });
+  searchText.innerText = "Poems (" + i + ")";
+}
+
+function renderTbContent(tb) {
+  let t = tb.innerText;
+  if (t == "All") {
+    renderAll();
+  } else if (t == "Recent") {
+    renderRecent();
+  } else if (t == "Stories") {
+    renderStories();
+  } else if (t == "Poems") {
+    renderPoems();
+  }
+}
+
+function setActive(tb) {
+  tabButtons.forEach((btn) => {
+    btn.classList.remove("active");
+  });
+  tb.classList.add("active");
+  renderTbContent(tb);
+}
+
 window.addEventListener("load", () => {
-  renderRecent();
+  tabButtons[0].classList.add("active");
   renderAll();
+  tabButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      setActive(btn);
+    });
+  });
 });

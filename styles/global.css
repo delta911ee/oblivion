@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap");
 
+:root {
+  --logoTextColor: #000000;
+  --btnBg: #440fda;
+  --btnHoverBg: #6731fa;
+  --searchBoxBg: #000000;
+  --navItemsColor: #808080;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +27,11 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 20px;
   background-color: #440fda;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .btn:hover {
-  box-shadow: 0px 0px 10px 5px rgba(79, 146, 240, 0.5);
+  background-color: var(--btnHoverBg);
 }
 
 .footer {

@@ -10,28 +10,35 @@
     <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon" />
   </head>
   <body>
-    <nav-bar color="#440fda" hoverColor="#db184f"></nav-bar>
+    <nav-bar
+      logoColor="black"
+      ,
+      itemColor="gray"
+      ,
+      hoverColor="#440fda"
+    ></nav-bar>
     <div class="main">
       <div class="searchContainer" id="searchContainer">
         <input
           type="text"
           id="searchBox"
           class="searchBox"
-          placeholder="Type your query here.."
+          placeholder="Search by genre or title.."
         />
-        <button class="searchButton" id="searchButton">Search</button>
+        <button class="btn searchButton" id="searchButton">Search</button>
       </div>
-      <div class="resultBox">
-        <div class="searchQueryText" id="searchQueryText">Recent</div>
-        <div class="results grid" id="results"></div>
+      <div class="quickActionsTab">
+        <button class="tabButton" id="all">All</button>
+        <button class="tabButton" id="recent">Recent</button>
+        <button class="tabButton" id="stories">Stories</button>
+        <button class="tabButton" id="poems">Poems</button>
       </div>
-      <hr />
-      <div class="allBox">
-        <div class="all"></div>
-        <div class="allResults" id="allResults"></div>
-      </div>
+      <h1 class="searchText" id="searchText"></h1>
+      <div class="resultBox" id="resultBox"></div>
     </div>
+    <div class="footer"></div>
   </body>
+  <script src="../scripts/footerScript.js"></script>
   <script src="../components/card.js" type="module"></script>
   <script src="../scripts/browse.js" type="module"></script>
   <script src="../components/navbar.js" type="module"></script>

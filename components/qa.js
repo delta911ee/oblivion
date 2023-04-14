@@ -16,7 +16,7 @@ qaBar.innerHTML = `
 }
 
 .answer{
-    background-color:#5c5b5b;
+    background-color:gray;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }

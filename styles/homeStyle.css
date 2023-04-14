@@ -9,23 +9,24 @@
 
 .hero > div {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
 }
 
 .heroLeft {
-  width: 40vw;
+  flex-direction: column;
+  width: 50vw;
 }
 
-.heroLeft > img {
+/* .heroLeft > img {
   width: 40vw;
   aspect-ratio: 1.875;
-}
+}  */
 
 .heroRight {
-  width: 60vw;
+  flex-direction: column;
+  width: 50vw;
 }
 
 .title {
@@ -42,4 +43,56 @@ br {
   width: 40vw;
   text-align: center;
   color: black;
+}
+
+.recentImages {
+  width: 300px;
+  height: 300px;
+}
+
+.tag {
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.recents {
+  width: 300px;
+  height: 300px;
+  transition: 0.4s ease-in-out;
+  position: absolute;
+  border-radius: 10px;
+  animation: glow 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: none;
+  }
+  to {
+    box-shadow: 0px 0px 10px 5px rgba(64, 25, 220, 0.5);
+  }
+}
+
+.recents:nth-child(1) {
+  transform: translateX(-4vw) translateY(-2vh) rotateZ(-10deg);
+}
+
+.recents:nth-child(2) {
+  transform: translateX(4vw) translateY(-2.5vh) rotateZ(10deg);
+}
+
+.recentImages:hover {
+  animation: none;
+}
+
+.recentImages:hover > .recents:nth-child(1) {
+  transform: translateX(-10vw) translateY(-4vh) rotateZ(-25deg);
+}
+
+.recentImages:hover > .recents:nth-child(2) {
+  transform: translateX(10vw) translateY(-10vh) rotateZ(25deg);
+}
+
+.recentImages:hover > .recents:nth-child(3) {
+  opacity: 0.5;
 }

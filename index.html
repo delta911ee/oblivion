@@ -13,7 +13,12 @@
     <nav-bar logoColor="black" itemColor="gray" hoverColor="blue"></nav-bar>
     <div class="hero">
       <div class="heroLeft">
-        <img src="assets/heroLeftImg.jpg" alt="" />
+        <div class="recentImages">
+          <img class="recents 1" />
+          <img class="recents 2" />
+          <img class="recents 3" />
+        </div>
+        <h1 class="tag">Fresh out of the oven</h1>
       </div>
       <div class="heroRight">
         <h1 class="title">Keep On Reading.</h1>
@@ -28,16 +33,9 @@
     </div>
     <div class="footer"></div>
   </body>
-  <script>
-    let footer = document.querySelector(".footer");
-    let year = new Date().getFullYear();
-    footer.innerHTML = "&copy; " + year + " Oblivion";
 
-    let browseButton = document.querySelector(".browse");
-    browseButton.addEventListener("click", () => {
-      window.open("pages/browse.html", "_self");
-    });
-  </script>
+  <script src="scripts/footerScript.js"></script>
+  <script src="scripts/home.js" type="module"></script>
   <script src="components/navbar.js" type="module"></script>
   <script src="components/card.js" type="module"></script>
 </html>
