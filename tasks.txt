@@ -2,3 +2,4 @@
 6 - improve keywords
 8 - improve loading speed
 9 - fix badly written code
+10 - fix footer bug

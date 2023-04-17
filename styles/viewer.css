@@ -78,3 +78,46 @@ br {
   font-size: 25px;
   color: #279be3;
 }
+
+.topHeader {
+  width: 100vw;
+  height: 80px;
+  background-color: #202020;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatContainer {
+  padding-top: 10px;
+  width: 100vw;
+  height: 90vh;
+}
+
+.senderBubble,
+.recieverBubble {
+  min-width: 40px;
+  max-width: 500px;
+  width: fit-content;
+  min-height: 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.senderBubble {
+  background-color: #270fda;
+  border-radius: 40px 0px 40px 40px;
+}
+
+.recieverBubble {
+  background-color: rgb(16, 194, 81);
+  border-radius: 0px 40px 40px 40px;
+  margin-left: 2vw;
+}
