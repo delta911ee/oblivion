@@ -81,16 +81,20 @@ br {
 
 .topHeader {
   width: 100vw;
-  height: 80px;
+  height: 10vh;
   background-color: #202020;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .chatContainer {
   padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(249, 206, 154);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   width: 100vw;
   height: 90vh;
 }
@@ -103,8 +107,8 @@ br {
   min-height: 20px;
   height: fit-content;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   font-size: 20px;
   color: white;
   margin-top: 10px;
@@ -113,11 +117,29 @@ br {
 
 .senderBubble {
   background-color: #270fda;
-  border-radius: 40px 0px 40px 40px;
+  border-radius: 10px;
 }
 
 .recieverBubble {
   background-color: rgb(16, 194, 81);
-  border-radius: 0px 40px 40px 40px;
+  border-radius: 10px;
   margin-left: 2vw;
+}
+
+.recieverImage {
+  margin-top: 10px;
+  margin-left: 2vw;
+  border-radius: 10px;
+}
+
+.senderImage {
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.userName {
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }

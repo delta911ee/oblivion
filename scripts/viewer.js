@@ -39,26 +39,62 @@ function endOfStory() {
   console.log("The End");
 }
 
-function renderMessage(messageList) {
+function renderMessage(chatStoryObject) {
+  let messageList = chatStoryObject.contentText;
   let messagePacket;
   if (messageList[messageIndex] == null) {
     endOfStory();
   } else {
-    messagePacket = messageList[messageIndex].split(":");
-    if (messagePacket[0] == "_S_") {
+    messagePacket = messageList[messageIndex].split("||");
+    if (messagePacket[0] == "S" && messagePacket[1].split("")[0] != "<") {
       let senderBubble = document.createElement("div");
       senderBubble.classList.add("senderBubble");
-      senderBubble.innerText = messagePacket[1];
+      let senderName = document.createElement("p");
+      senderName.innerText = chatStoryObject.sName;
+      senderName.classList.add("userName");
+      senderBubble.appendChild(senderName);
+      let senderText = document.createElement("p");
+      senderText.innerText = messagePacket[1];
+      senderBubble.appendChild(senderText);
       chatContainer.appendChild(senderBubble);
       senderBubble.style.marginLeft =
         "calc(98vw - " +
         window.getComputedStyle(senderBubble).getPropertyValue("width") +
         " - 40px)";
-    } else if (messagePacket[0] == "_R_") {
+    } else if (
+      messagePacket[0] == "R" &&
+      messagePacket[1].split("")[0] != "<"
+    ) {
       let recieverBubble = document.createElement("div");
       recieverBubble.classList.add("recieverBubble");
-      recieverBubble.innerText = messagePacket[1];
+      let recieverName = document.createElement("p");
+      recieverName.innerText = chatStoryObject.rName;
+      recieverName.classList.add("userName");
+      recieverBubble.appendChild(recieverName);
+      let recieverText = document.createElement("p");
+      recieverText.innerText = messagePacket[1];
+      recieverBubble.appendChild(recieverText);
       chatContainer.appendChild(recieverBubble);
+    } else if (
+      messagePacket[0] == "R" &&
+      messagePacket[1].split("")[0] == "<"
+    ) {
+      let recieverImage = document.createElement("img");
+      recieverImage.src = messagePacket[1].split(">")[1];
+      recieverImage.classList.add("recieverImage");
+      chatContainer.appendChild(recieverImage);
+    } else if (
+      messagePacket[0] == "S" &&
+      messagePacket[1].split("")[0] == "<"
+    ) {
+      let senderImage = document.createElement("img");
+      senderImage.src = messagePacket[1].split(">")[1];
+      senderImage.classList.add("senderImage");
+      chatContainer.appendChild(senderImage);
+      senderImage.style.marginLeft =
+        "calc(98vw - " +
+        window.getComputedStyle(senderImage).getPropertyValue("width") +
+        ")";
     }
   }
 }
@@ -82,43 +118,20 @@ function initChatStory(chatStoryObject) {
   contentContainer.style.height = "100vh";
   contentContainer.style.justifyContent = "flex-start";
   contentHolder.style.display = "none";
-  topHeader = document.createElement("div");
-  topHeader.classList.add("topHeader");
-  contentContainer.appendChild(topHeader);
-  goBack = document.createElement("button");
-  goBack.classList.add("btn");
-  goBack.innerText = "Go Back";
-  goBack.style.minWidth = "100px";
-  goBack.style.marginLeft = "2vw";
-  goBack.style.cursor = "pointer";
-  goBack.addEventListener("click", () => {
-    window.open("../pages/browse.html", "_self");
-  });
-  topHeader.appendChild(goBack);
-  cName = document.createElement("h1");
-  cName.innerText = chatStoryObject.contentName;
-  cName.classList.add("cName");
-  topHeader.appendChild(cName);
-  hide = document.createElement("button");
-  hide.innerText = "Hide / Unhide (X) ";
-  hide.classList.add("btn");
-  hide.style.marginRight = "2vw";
-  topHeader.appendChild(hide);
   chatContainer = document.createElement("div");
   chatContainer.classList.add("chatContainer");
   contentContainer.appendChild(chatContainer);
+  topHeader = document.createElement("div");
+  topHeader.classList.add("topHeader");
+  contentContainer.appendChild(topHeader);
   window.addEventListener("keypress", (e) => {
     if (e.key == "x" || e.key == "X") {
       viewUnviewTopHeader();
     }
   });
-  hide.addEventListener("click", () => {
-    viewUnviewTopHeader();
-  });
-
   window.addEventListener("keypress", (e) => {
     if (e.key == "Enter") {
-      renderMessage(chatStoryObject.contentText);
+      renderMessage(chatStoryObject);
       messageIndex++;
     }
   });
