@@ -271,28 +271,4 @@ export const data = [
       "unspoken sorrow poem activism sad innocent creatures voice plead abused tortured greed cries unheard pain ignored heinous crime fur flesh being taken granted feeling suffering unforgivable sin dark shadow lurks ignore terrible plight sleep peace night lives matter burden speak up strong choice end cruelty answer silent call pledge right shed light horrors done dark difference mark care love amends protect",
     contentAuthor: frequentAuthors.oblivionTeam,
   },
-  {
-    contentId: "chattest",
-    contentName: "Chat Test",
-    contentType: "Chat story",
-    contentImage:
-      "https://play-lh.googleusercontent.com/cF_oWC9Io_I9smEBhjhUHkOO6vX5wMbZJgFpGny4MkMMtz25iIJEh2wASdbbEN7jseAx=w240-h480-rw",
-    contentGenre: "Blah",
-    contentUploadDate: "14/4/23",
-    sName: "John",
-    rName: "James",
-    contentText: [
-      "S||Hello James!",
-      "R||Yo, What's up?",
-      "S||Nothing much man. Have you heard about this new app called quid? It's some good shit yo. You gotta install it man.",
-      "R||Hello",
-      "R||....",
-      "R||..''",
-      "R||ambivert",
-      "R||Scroll",
-      "S||??????",
-    ],
-    contentDescription: "a",
-    contentAuthor: frequentAuthors.oblivionTeam,
-  },
 ];
