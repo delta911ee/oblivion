@@ -45,10 +45,10 @@ navBar.innerHTML = `
         <h1 class="logoText">OBLIVION</h1>
     </div>
     <div class="navRight">
-        <a class="item" id="home" href="../index.html">Home</a>
-        <a class="item" id="browse" href="../pages/browse.html">Browse</a>
-        <a class="item" id="about" href="../pages/help.html">FAQ</a>
-        <a class="item" id="support" href="../pages/donate.html">Support</a>
+        <a class="item" id="home" href="index.html">Home</a>
+        <a class="item" id="browse" href="browse.html">Browse</a>
+        <a class="item" id="about" href="help.html">FAQ</a>
+        <a class="item" id="support" href="donate.html">Support</a>
     </div>
 </div>
 `;
