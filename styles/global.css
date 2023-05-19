@@ -1,4 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@800&display=swap");
+
+:root {
+  --logoTextColor: #000000;
+  --btnBg: #440fda;
+  --btnHoverBg: #6731fa;
+  --searchBoxBg: #000000;
+  --navItemsColor: #808080;
+}
 
 * {
   margin: 0;
@@ -7,4 +16,32 @@
 
 body {
   font-family: "Inter", sans-serif;
+}
+
+.btn {
+  min-width: 200px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  background-color: #440fda;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--btnHoverBg);
+}
+
+.footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: #1e1e1e;
+  display: flex;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
 }

@@ -25,12 +25,12 @@ card.innerHTML = `
 }
 
 .cardContainer:hover{
-  box-shadow: rgba(0,0,0,0.7) 0px 7px 29px 0px;
+  box-shadow: 0px 0px 10px 5px rgba(64, 25, 220, 0.7)
 }
 
 </style>
 
-<img class="cardContainer skeleton">
+<img class="cardContainer skeleton" tabindex="0">
 
 `;
 
@@ -47,7 +47,7 @@ class Card extends HTMLElement {
       .querySelector(".cardContainer")
       .addEventListener("click", () => {
         let cId = this.getAttribute("contentId");
-        window.open("../pages/viewer.html?cId=" + cId);
+        window.open("../pages/viewer.html?cId=" + cId, "_self");
       });
     this.shadowRoot
       .querySelector(".cardContainer")

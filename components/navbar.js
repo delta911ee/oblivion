@@ -3,94 +3,52 @@ const navBar = document.createElement("template");
 navBar.innerHTML = `
 <style>
 .container{
-    width:100vw;
-    height:15vh;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navLeft{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    margin-left:2vw;
-    cursor:pointer;
-}
-
-.oblivionLogo{
-    width:50px;
-    height:50px;
-    margin:10px;
-}
-
-.logoText{
-    font-size:40px;
-    margin:5x;
-    font-weight:800;
-    transition:0.2s ease;
+  margin-left:50px;
 }
 
 .navRight{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-right:2vw;
+  margin-right:50px;
 }
 
-.item{
-    font-size:20px;
-    padding:20px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.2s ease;
-    text-decoration:none;
+.navLeft > .logoText{
+  font-family: "K2D", sans-serif;
+  letter-spacing: -2px;
+  font-size: 50px;
+  cursor: pointer;
 }
 
-@media screen and (max-width:700px){
-  .container{
-    flex-direction:column;
-  }
+.navRight > .item{
+  font-size: 20px;
+  font-weight:400;
+  text-decoration:none;
 }
 
-@media screen and (max-width:480px){
-  .logoText{
-    font-size:35px;
-  }
-  .oblivionLogo{
-    width:45px;
-    height:45px;
-  }
-  .item{
-    font-size:15px;
-  }
+#home, #browse, #about{
+  margin-inline:25px;
 }
 
-@media screen and (max-width:320px){
-  .item{
-    padding:10px;
-  }
-  .oblivionLogo{
-    width:35px;
-    height:35px;
-  }
-  .logoText{
-    font-size:30px;
-  }
+#support{
+  margin-left:25px;
 }
 
 </style>
 <div class="container">
     <div class="navLeft">
-        <img class="oblivionLogo" src="../assets/logo.svg"></img>
-        <h1 class="logoText">Oblivion</h1>
+        <h1 class="logoText">OBLIVION</h1>
     </div>
     <div class="navRight">
         <a class="item" id="home" href="../index.html">Home</a>
         <a class="item" id="browse" href="../pages/browse.html">Browse</a>
-        <a class="item" id="about" href="../pages/help.html">Help</a>
-        <a class="item" id="support" href="../pages/donate.html">Donate</a>
+        <a class="item" id="about" href="../pages/help.html">FAQ</a>
+        <a class="item" id="support" href="../pages/donate.html">Support</a>
     </div>
 </div>
 `;
@@ -101,15 +59,15 @@ class NavBar extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(navBar.content.cloneNode(true));
     let logoText = this.shadowRoot.querySelector(".logoText");
-    logoText.setAttribute("style", "color:" + this.getAttribute("color"));
+    logoText.setAttribute("style", "color:" + this.getAttribute("logoColor"));
     let items = this.shadowRoot.querySelectorAll(".item");
     items.forEach((item) => {
-      item.setAttribute("style", "color:" + this.getAttribute("color"));
+      item.setAttribute("style", "color:" + this.getAttribute("itemColor"));
       item.addEventListener("mouseover", () => {
         item.setAttribute("style", "color:" + this.getAttribute("hoverColor"));
       });
       item.addEventListener("mouseout", () => {
-        item.setAttribute("style", "color:" + this.getAttribute("color"));
+        item.setAttribute("style", "color:" + this.getAttribute("itemColor"));
       });
     });
     this.shadowRoot.querySelector(".navLeft").addEventListener("click", () => {
