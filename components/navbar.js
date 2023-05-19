@@ -87,10 +87,10 @@ navBar.innerHTML = `
         <h1 class="logoText">Oblivion</h1>
     </div>
     <div class="navRight">
-        <a class="item" id="home" href="../index.html">Home</a>
-        <a class="item" id="browse" href="../pages/browse.html">Browse</a>
-        <a class="item" id="about" href="../pages/help.html">Help</a>
-        <a class="item" id="support" href="../pages/donate.html">Donate</a>
+        <a class="item" id="home" href="../oblivion/index.html">Home</a>
+        <a class="item" id="browse" href="../oblivion/pages/browse.html">Browse</a>
+        <a class="item" id="about" href="../oblivion/pages/help.html">Help</a>
+        <a class="item" id="support" href="../oblivion/pages/donate.html">Donate</a>
     </div>
 </div>
 `;
