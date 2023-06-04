@@ -107,7 +107,7 @@ class NavBar extends HTMLElement {
       });
     });
     this.shadowRoot.querySelector(".navLeft").addEventListener("click", () => {
-      window.open("../index.html", "_self");
+      window.open("../oblivion/index.html", "_self");
     });
   }
 }
