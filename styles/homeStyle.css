@@ -27,6 +27,7 @@
 .heroRight {
   flex-direction: column;
   width: 50vw;
+  text-align: center;
 }
 
 .title {
@@ -61,16 +62,6 @@ br {
   transition: 0.4s ease-in-out;
   position: absolute;
   border-radius: 10px;
-  animation: glow 0.7s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    box-shadow: none;
-  }
-  to {
-    box-shadow: 0px 0px 10px 5px rgba(64, 25, 220, 0.5);
-  }
 }
 
 .recents:nth-child(1) {
@@ -95,4 +86,57 @@ br {
 
 .recentImages:hover > .recents:nth-child(3) {
   opacity: 0.5;
+}
+
+@media screen and (max-width:1030px){
+
+  .heroLeft, .recentImages, .tag{
+    display: none;
+    width: 0;
+  }
+
+  .heroRight{
+    width: 100vw;
+  }
+
+  .text{
+    width: 70vw;
+  }
+
+}
+
+@media screen and (max-width: 840px){
+
+  .title{
+    font-size: 70px;
+  }
+
+}
+
+@media screen and (max-width: 660px){
+
+  .title{
+    font-size: 60px;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+
+  .title{
+    font-size: 50px;
+  }
+
+}
+
+@media screen and (max-width: 445px){
+
+  .title{
+    font-size: 40px;
+  }
+
+  .text{
+    width: 90vw;
+  }
+
 }

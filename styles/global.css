@@ -40,8 +40,8 @@ body {
   background-color: #1e1e1e;
   display: flex;
   color: white;
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 400;
   justify-content: center;
   align-items: center;
 }

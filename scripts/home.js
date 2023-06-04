@@ -7,7 +7,7 @@ browseButton.addEventListener("click", () => {
 
 let imgs = document.querySelectorAll(".recents");
 
-for (let i = 0; i <= imgs.length; i++) {
+for (let i = 0; i < imgs.length; i++) {
   imgs[i].src = recentIds[i].contentImage;
   imgs[i].addEventListener("click", () => {
     window.open("viewer.html?cid=" + recentIds[i].contentId);

@@ -14,6 +14,7 @@ body {
 .main {
   width: 100vw;
   height: fit-content;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,10 +94,90 @@ body {
 }
 .resultBox {
   display: grid;
-  width: 95vw;
+  width: 100vw;
   height: fit-content;
+  place-content: center;
   place-items: center;
   grid-template-columns: 19% 19% 19% 19% 19%;
   row-gap: 5vh;
   margin-bottom: 10vh;
 }
+
+@media screen and (max-width: 1450px){
+  
+  .resultBox{
+    grid-template-columns: 25% 25% 25% 25%;
+  }
+
+}
+
+@media screen and (max-width: 1100px){
+  
+  .resultBox{
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+
+}
+
+@media screen and (max-width: 800px){
+  
+  .resultBox{
+    grid-template-columns: 50% 50%;
+  }
+
+}
+
+@media screen and (max-width: 680px){
+  
+  .searchBox{
+    width: 250px;
+  }
+
+  .tabButton{
+    width: calc(498px/4);
+  }
+
+}
+
+@media screen and (max-width: 530px){
+  
+  .resultBox{
+    grid-template-columns: 75%;
+  }
+
+  .searchContainer{
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+  }
+
+  .searchBox{
+    width: 350px;
+  }
+  
+  .searchButton{
+    width: calc(350px + 36px)
+  }
+
+  .tabButton{
+    width: calc(386px/4);
+  }
+
+}
+
+@media screen and (max-width: 410px){
+
+  .searchBox{
+    width: 300px;
+  }
+  
+  .searchButton{
+    width: calc(300px + 36px)
+  }
+
+  .tabButton{
+    width: calc(336px/4);
+  }
+
+}
+

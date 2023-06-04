@@ -39,6 +39,41 @@ navBar.innerHTML = `
   margin-left:25px;
 }
 
+@media screen and (max-width: 800px){
+
+  .container{
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navLeft, .navRight{
+    margin: 0px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home, #browse, #about, #support{
+    margin-inline: 0px;
+  }
+
+  .navRight{
+    justify-content: space-around;
+  }
+  
+
+}
+
+@media screen and (max-width: 460px){
+
+  #support{
+    
+  }
+
+}
+
 </style>
 <div class="container">
     <div class="navLeft">
@@ -51,6 +86,7 @@ navBar.innerHTML = `
         <a class="item" id="support" href="donate.html">Support</a>
     </div>
 </div>
+
 `;
 
 class NavBar extends HTMLElement {
